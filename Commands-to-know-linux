@@ -1,0 +1,26 @@
+# OS Version
+cat /etc/os-release
+
+# Kernel Version
+uname -r
+
+# Hostname
+hostname
+
+# Systemd Version
+systemctl --version
+
+# CPU
+lscpu
+
+# Memory
+free -h
+
+# Disk
+df -h
+
+# Running Services
+systemctl list-units --type=service
+
+# Failed Services
+systemctl --failed
